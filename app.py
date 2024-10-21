@@ -8,7 +8,7 @@ import tempfile
 app = Flask(__name__)
 
 # INSERT MODEL BELOW
-model = load_model('models/saved_model.h5')
+model = load_model('saved_model.h5')
 
 def preprocess_image(img_path):
     img = image.load_img(img_path, target_size=(32, 32))
